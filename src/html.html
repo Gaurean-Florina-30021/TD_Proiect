@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asus Laptop shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="src\Images\logo.png">
+            </div>
+            <div class="navigation-links">
+                <ul>
+                    <li ><a href="#">Home</a> </li>
+                    <li ><a href="#">Laptop</a> </li>
+                    <li ><a href="#">Accesories</a> </li>
+                    <li ><a href="#">Cart</a> </li>
+
+
+                </ul>
+
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="Images/1.jpg" class="Laptop">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="Images\procesor.png">
+                    <div>
+                        <h1>Procesor</h1>
+                        <p>AMD,Ryzen 7,	5800H<br/>3.2Ghz,,8 nuclee,<br/>Procesor Grafic AMD Radeon™ Graphics</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="Images\ram.png">
+                    <div>
+                        <h1>RAM</h1>
+                        <p>Capacitate: 16GB, <br/>Capacitate maxima:64GB,<br/>Sloturi ocupate: 2 din 2</p>
+                    </div>
+                </div>
+
+                <div class="feature three">
+                    <img src="Images\display.png">
+                    <div>
+                        <h1>Display</h1>
+                        <p>Placa video integrata, <br/>nVidia GeForce RTX</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="Images\hdd.png">
+                    <div>
+                        <h1>Hard Disk</h1>
+                        <p>SSD , 512 GB<br/>PCI Express</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="controls">
+            <img src="Images/up.png" id="Up">
+            <h3>Features</h3>
+            <img src="Images/up.png" id="Down">
+        </div>
+
+    </div>
+    <script>
+        var circle=document.getElementById("circle");
+        var Up=document.getElementById("Up");
+        var Down=document.getElementById("Down");
+        var rotateValue=circle.style.transform;
+        var rotateSum;
+        Up.onclick=function()
+        {
+            rotateSum=rotateValue+"rotate(-90deg)";
+            circle.style.transform=rotateSum;
+            rotateValue=rotateSum;
+        }
+        Down.onclick=function()
+        {
+            rotateSum=rotateValue+"rotate(90deg)";
+            circle.style.transform=rotateSum;
+            rotateValue=rotateSum;
+        }
+    </script>
+
+</body>
+</html>
