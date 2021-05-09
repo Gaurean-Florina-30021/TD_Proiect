@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:on="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
     <title>Gaming Laptops</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,6 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+
 <div class="header">
 
     <div class="container">
@@ -19,7 +21,7 @@
 
             </div>
             <nav>
-                <ul>
+                <ul id="MenuItem">
                     <li><a href=""> Home</a></li>
                     <li><a href=""> Products </a></li>
                     <li><a href="">Accesories </a></li>
@@ -29,7 +31,8 @@
 
                 </ul>
             </nav>
-            <img src="poze/cart.png" width="30px" height="30px">
+            <img src="poze/cart.png" width="30px" height="30px" >
+            <img src="poze/menu.png" class="menuicon"  onclick="menutoggle() ">
         </div>
         <div class="row">
             <div class="col2">
@@ -67,7 +70,7 @@
 
 <!------------ featured product -------->
 <div class="small-container">
-    <h2>Featured Products</h2>
+    <h2 class="Title">Featured Products</h2>
     <div class="row">
         <div class="col-4">
             <img src="poze/Laptop1/1.jpg">
@@ -77,12 +80,330 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star-half"></i>
+                <i class="fa fa-star-half-alt"></i>
+                <!--- <i class="far fa-star"></i>  ---->
             </div>
             <p>7.199 Lei</p>
         </div>
+        <div class="col-4">
+            <img src="poze/Laptop2/1.png">
+            <h4>Laptop Dell Alienware m15 R3</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                <!--- <i class="far fa-star"></i>  ---->
+            </div>
+            <p>25.179 Lei</p>
+        </div>
+        <div class="col-4">
+            <img src="poze/Laptop3/1.png">
+            <h4>Laptop Gaming Lenovo Legion Y740-15ICHg</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <!--<i class="fas fa-star-half-alt"></i> -->
+                <!--- <i class="far fa-star"></i>  ---->
+            </div>
+            <p>13.889 Lei</p>
+        </div>
+        <div class="col-4">
+            <img src="poze/Laptop4/1.png">
+            <h4>Laptop Razer Blade 15 Base 2021</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <!--- <i class="far fa-star"></i>  ---->
+            </div>
+            <p>12.449 Lei</p>
+        </div>
+    </div>
+
+    <!-- Latest -->
+
+    <h2 class="Title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="poze/Latest/Laptop1/1.png">
+            <h4>Laptop Gaming ASUS ROG Zephyrus G14 GA401IV </h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                <!--- <i class="far fa-star"></i>  ---->
+            </div>
+            <p>7.044 Lei</p>
+        </div>
+        <div class="col-4">
+            <img src="poze/Latest/Laptop2/1.png">
+            <h4>Laptop Dell Alienware m15 R4</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+                <!--- <i class="far fa-star"></i>  ---->
+            </div>
+            <p>16.999 Lei</p>
+        </div>
+        <div class="col-4">
+            <img src="poze/Latest/Laptop3/1.png">
+            <h4>Laptop Gaming ASUS TUF A15 FA506IU-AL010</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                <!--<i class="fas fa-star-half-alt"></i> -->
+                <!--- <i class="far fa-star"></i>  ---->
+            </div>
+            <p>4.598 Lei</p>
+        </div>
+        <div class="col-4">
+            <img src="poze/Latest/Accesorii/Rcusac1/1.png">
+            <h4>Rucsac laptop Anti-Furt Port Designs Chicago EVO BP cu port USB extern si Husa impermeabila,
+                13-15.6inch, Negru</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <!--- <i class="far fa-star"></i>  ---->
+            </div>
+            <p>210 Lei</p>
+
+        </div>
+        <div class="col-4">
+            <img src="poze/Latest/Accesorii/Adaptor1/1.png">
+            <h4>Hub adaptor Co2</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <!--- <i class="far fa-star"></i>  ---->
+            </div>
+            <p>2.200,47 Lei</p>
+        </div>
+        <div class="col-4">
+            <img src="poze/Latest/Laptop4/1.png">
+            <h4>Laptop HP ZBook Fury 17 G71</h4>
+            <div class="rating">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <!--- <i class="far fa-star"></i>  ---->
+            </div>
+
+            <p>16.660 Lei</p>
+        </div>
+        <div class="col-4">
+            <img src="poze/Latest/Accesorii/Protectie1/1.png">
+            <h4>Set 6x Protectie acoperire webcam MTP anti-spy</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <!--- <i class="far fa-star"></i>  ---->
+            </div>
+            <p>35 Lei</p>
+        </div>
+
+        <div class="col-4">
+            <img src="poze/Latest/Accesorii/Repara1/1.png">
+            <h4>Rama display Laptop, Lenovo, IdeaPad 320-17</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <!--- <i class="far fa-star"></i>  ---->
+            </div>
+            <p>35 Lei</p>
+        </div>
+
     </div>
 </div>
+
+
+<!-------- OFFER ---------->
+<div class="offer">
+
+    <div class="small-container">
+
+
+        <div class="row">
+
+            <div class="col2">
+                <img src="poze/Exclusive/1a.png" class="offer-img" id="songpic">
+                <audio  autoplay controls height="10px" width="100px">
+                    <source src="poze/Exclusive/song1.mp3" type="audio/mp3">
+                    <source src="poze/Exclusive/song1.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="col2">
+
+                <!---- <a href="poze/Exclusive/song1.mp3">Play sound file</a>---->
+                <!-----     <audio  autoplay>
+                         <source src="poze/Exclusive/song1.mp3" type="audio/mp3">
+                         <source src="poze/Exclusive/song1.mp3" type="audio/mp3">
+                         Your browser does not support the audio element. ---->
+
+
+                <p>Exclusive available on Gaming Laptops</p>
+                <h2>Kit Gaming A+ EL1, 4 in 1,Tastatura, Mouse, Casti, Mousepad</h2>
+                <small>Esti incepator sau pur si simplu hardware-ul iti diminueaza performanta? <br>O intrebare la care
+                    doar experienta de gamer iti poate raspunde.<br> De aceea alegerea tastaturii, mousepad-ului, a
+                    castilor si mouse-ului potrivit este o sarcina extrem de importanta, mai ales in cazul in care iti
+                    doresti atat performanta cat si distractie.<br></small>
+                <a href="" class="btn">Buy Now &#8594;</a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-------- testimonial----------->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lots off gaming products and variety and it is a trusteble website.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <!--- <i class="far fa-star"></i>  ---->
+                </div>
+                <img src="poze/user1.png">
+                <h3>Maria Rodriguez</h3>
+            </div>
+            <div class="col3">
+                <i class="fa fa-quote-left"></i>
+                <p>A good and easy site but they have a little problem with time delivery. The products are 100%
+                    original.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <!--- <i class="far fa-star"></i>  ---->
+                </div>
+                <img src="poze/user2.png">
+                <h3>Mike Tomson</h3>
+            </div>
+            <div class="col3">
+                <i class="fa fa-quote-left"></i>
+                <p>Easy order, fast delivery, safe delivery, original product and easy games ;)</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <!--- <i class="far fa-star"></i>  ---->
+                </div>
+                <img src="poze/user3.jpg">
+                <h3>Josh Walker</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------    sponsor brand ------------>
+<div class="brands">
+
+    <div class="small-container">
+        <div class="row">
+        <div class="col-5">
+            <img src="poze/alien.png">
+        </div>
+        <div class="col-5">
+            <img src="poze/dell.png">
+        </div>
+        <div class="col-5">
+            <img src="poze/lenovo.png">
+        </div>
+        <div class="col-5">
+            <img src="poze/razer.png">
+        </div>
+        <div class="col-5">
+            <img src="poze/asus.png">
+        </div>
+    </div>
+</div>
+</div>
+<!---------- footer ---->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                <h3> Download Our App</h3>
+                <p>Download App for Android and IOS mobil phone</p>
+                <div class="app">
+                    <img src="poze/magazine.png" >
+                </div>
+            </div>
+            <div class="footer-col2">
+                <img src="poze/logo.png" width="125px">
+                <p>Our Purpose Is To Sustain Your Other Real Life<br> And Show You The Benefits Of Lots Of Others Lives</p>
+            </div>
+            <div class="footer-col3">
+                <h3> Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+<p>Copyright 2021 -Gaurean Florina</p>
+    </div>
+    </div>
+</div>
+<!-------- js for toggle menu --------->
+<script>
+var MenuItems=document.getElementById("MenuItem");
+MenuItems.style.maxHeight="0px";
+function menutoggle(){
+
+    if(MenuItems.style.maxHeight=="0px")
+    {
+        MenuItems.style.maxHeight="200px";
+    }
+    else{
+        MenuItems.style.maxHeight="0px";
+    }
+}
+</script>
+
 
 </body>
 </html>
