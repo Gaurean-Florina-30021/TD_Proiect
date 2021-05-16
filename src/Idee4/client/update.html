@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script type="text/javascript" src="libs/vue.js"></script>
+        <script type="text/javascript" src="libs/axios.js"></script>
+    </head>
+    <body>
+        <a href="index.html">Home</a>
+        <div id="update">
+            Actualizare Laptop-ul cu id-ul: {{ id }} <br>
+            Name: <input type="text" v-model="laptop.name">
+            Procesor: <input type="text" v-model="laptop.Procesor">
+            <button  v-on:click="update(laptop.id)">Save</button>
+
+            <p>{{message}}</p>
+
+        </div>
+
+        <script src="src/update.js"></script>
+    </body>
+</html>

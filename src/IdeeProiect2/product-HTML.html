@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
-    <title>All products-Gaming Laptops</title>
+    <title>Laptop1</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -41,80 +41,38 @@
 <div class="small-container single-product">
     <div class="row">
         <div class="col2">
-        <img src="poze/Laptop1/1.jpg">
-    </div>
-        <div class="col2">
-            <p>Home/Laptop</p>
-            <h1>Laptop Gaming ASUS ROG Strix SCAR 15</h1>
-            <h4>7.199 Lei</h4>
-            <select>
-                <option>Select color</option>
-                <option>black</option>
-                <option>white</option>
-                <option>orange</option>
-                <option>blue</option>
-            </select>
-           <a href="" class="btn1">Add To Cart </a>
-            <h3>Product Details: </h3>
-            <p>Laptop Gaming ASUS ROG Strix SCAR 15 cu procesor AMD Ryzen™ 7 5800H pana la 4.40 GHz, 15.6", Full HD, 300Hz, 16GB, 512GB SSD, NVIDIA® GeForce RTX™ 3060 6GB, Free DOS, Black</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <img src="poze/Latest/Laptop1/1.png">
-            <h4>Laptop Gaming ASUS ROG Zephyrus G14 GA401IV </h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-                <!--- <i class="far fa-star"></i>  ---->
+            <img src="poze/Laptop1/1.jpg" width="100%" id="produs" >
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="poze/Laptop1/2.jpg" width="100%" class="pozamica">
+                </div>
+                <div class="small-img-col">
+                    <img src="poze/Laptop1/4.jpg" width="100%" class="pozamica">
+                </div>
+                <div class="small-img-col">
+                    <img src="poze/Laptop1/5.jpg" width="100%" class="pozamica">
+                </div>
             </div>
-            <p>7.044 Lei</p>
-        </div>
-        <div class="col-4">
-            <img src="poze/Latest/Laptop1/1.png">
-            <h4>Laptop Gaming ASUS ROG Zephyrus G14 GA401IV </h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-                <!--- <i class="far fa-star"></i>  ---->
+            <div class="col2">
+                <p>Home/Laptop</p>
+                <h1>Laptop Gaming ASUS ROG Strix SCAR 15</h1>
+                <h4>7.199 Lei</h4>
+                <select>
+                    <option>Select color</option>
+                    <option>black</option>
+                    <option>white</option>
+                    <option>orange</option>
+                    <option>blue</option>
+                </select>
+                <a href="" class="btn1">Add To Cart </a>
+                <h3>Product Details: <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Laptop Gaming ASUS ROG Strix SCAR 15 cu procesor AMD Ryzen™ 7 5800H pana la 4.40 GHz, 15.6", Full HD,
+                    300Hz, 16GB, 512GB SSD, NVIDIA® GeForce RTX™ 3060 6GB, Free DOS, Black</p>
             </div>
-            <p>7.044 Lei</p>
-        </div>
-        <div class="col-4">
-            <img src="poze/Latest/Laptop1/1.png">
-            <h4>Laptop Gaming ASUS ROG Zephyrus G14 GA401IV </h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-                <!--- <i class="far fa-star"></i>  ---->
-            </div>
-            <p>7.044 Lei</p>
-        </div>
-        <div class="col-4">
-            <img src="poze/Latest/Laptop1/1.png">
-            <h4>Laptop Gaming ASUS ROG Zephyrus G14 GA401IV </h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-                <!--- <i class="far fa-star"></i>  ---->
-            </div>
-            <p>7.044 Lei</p>
         </div>
 
     </div>
-</div>
 
 
 </div>
@@ -168,8 +126,29 @@ function menutoggle(){
     }
 }
 
+
+
 </script>
+<!-------- js for product Galery --------->
+<script>
+        var produs1 = document.getElementById("produs");
+        var pozamica1 = document.getElementById("pozamica");
 
+        pozamica1[0].onclick = function(){
+            produs1.src=pozamica1[0].src;
 
+        }
+
+         pozamica1[1].onclick = function(){
+            produs1.src=pozamica1[1].src;
+
+        }
+
+        pozamica1[2].onclick = fu=nction(){
+            produs1.src=pozamica1[2].src;
+
+        }
+
+</script>
 </body>
 </html>
