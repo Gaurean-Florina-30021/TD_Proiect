@@ -1,13 +1,11 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles/details.css"/>
     <script type="text/javascript" src="libs/vue.js"></script>
     <script type="text/javascript" src="libs/axios.js"></script>
+    <link rel="stylesheet" href="styles/add.css"/>
 </head>
-
 <body>
-<!--------------------  HEADER --------------------->
 <div class="header">
 
     <div class="container1">
@@ -25,32 +23,21 @@
         </div>
     </div>
 </div>
-<div id="details">
-    <h1>Detalii pentru produsul cu id-ul: {{ id }}</h1>
-    <div class="container">
-        <div class="custom"></div>
-        <div class="label">Name:</div>
-        <div class="value">{{laptop.name}}</div>
-    </div>
-    <div class="label">Price:</div>
-    <div class="value">{{laptop.price}}</div>
-    <div class="label">Procesor:</div>
-    <div class="value">{{laptop.Procesor}}</div>
-    <div class="label">Sisteme de operare:</div>
-    <div class="value">{{laptop.SistemDeOperare}}</div>
-    <div class="label">Hard Disk:</div>
-    <div class="value">{{laptop.HardDisk}}</div>
-    <div class="label">Placa Video:</div>
-    <div class="value">{{laptop.placaVideo}}</div>
-    <div class="label">Tip memorie:</div>
-    <div class="value">{{laptop.TipMem}}</div>
-    <div class="label">Frecventa:</div>
-    <div class="value">{{laptop.frecventa}}</div>
-    <div class="label">Frecventa Turbo:</div>
-    <div class="value">{{laptop.frecventaTurbo}}</div>
+<div  id="add">
+    Name: <input type="text" v-model="laptop.name" />
+    Procesor si numar nuclee: <input type="text" v-model="laptop.Procesor"/>
+    Frecventa: <input type="text" v-model="laptop.frecventa"/>
+    Frecventa Turbo: <input type="text" v-model="laptop.frecventaTurbo"/>
+    Tip memorie: <input type="text" v-model="laptop.TipMem"/>
+    HardDisk: <input type="text" v-model="laptop.HardDisk"/>
+    Sistem de operare: <input type="text" v-model="laptop.SistemDeOperare"/>
+    Placa video: <input type="text" v-model="laptop.placaVideo"/>
+    Pret: <input type="text" v-model="laptop.price"/>
 
+
+    <button v-on:click="add(laptop)">Save</button>
+    <p>{{message}}</p>
 </div>
-
 <!---------- footer ---->
 <div class="footer">
     <div class="container1">
@@ -84,7 +71,6 @@
     </div>
 </div>
 
-<script src="src/details.js"></script>
+<script src="src/add.js"></script>
 </body>
-
 </html>

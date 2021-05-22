@@ -21,10 +21,10 @@ function run() {
     }
   });
 
-  indexComponent.use(VueMaterial);
+  //indexComponent.use(VueMaterial);
 
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  run();
-});
+  document.addEventListener('DOMContentLoaded', () => {
+    run();
+  });

@@ -27,21 +27,19 @@
             <nav1>
                 <ul1 id="MenuItem">
                     <li1><a href=""> Home</a></li1>
-          </ul1>
+                </ul1>
             </nav1>
-            <img src="src/poze/cart.png" width="30px" height="30px">
-        <!----    <img src="src/poze/menu.png" class="menuicon" onclick="menutoggle() ">   --->
+
+            <!----    <img src="src/poze/menu.png" class="menuicon" onclick="menutoggle() ">   --->
         </div>
         <div class="row1">
             <div class="col21">
                 <h11>Give to your games a new<br> experience!</h11>
-              <br>
+                <br>
                 <p1>Games don't make you violent, lag does!<br>
                     Let us show you the way to a peaceful house<br>
                     Home is where you are 'Player1'
                 </p1>
-              <br>
-                <a1 href="" class="btn1">Explore now &#8594;</a1>
             </div>
             &nbsp
             &nbsp
@@ -80,34 +78,87 @@
 
 <!-----------------  Products --------------->
 <div id="app">
+    <div class="title">All laptops
+        <h1></h1>
 
-    <div class="title">All laptops</div>
+    </div>
 
     <p style="text-align: center" v-if="laptops.length == 0">No laptops found</p>
 
-    <ul class="user-list" v-if="laptops.length > 0">
-        <li>
-            <div class="user-row-header">
-                <div class="user-name">Name</div>
-                <div class="user-city">Price</div>
-            </div>
-        </li>
 
-        <li v-for="laptop in laptops">
-            <div class="">
-                <a :href="'details.html?id='+laptop.id">{{ laptop.name }}</a>
-                <span class=""><i>{{ laptop.price }}</i></span>
 
-                <button v-on:click="deleteLaptop(laptop.id)">Delete</button>
-                <div class="updateContainer">
-                    <a :href="'update.html?id='+laptop.id" target="_self">Update</a>
-                </div>
 
-            </div>
-        </li>
-    </ul>
+    <div class="container">
+
+        <div class="row1">
+            <ul class="user-list" v-if="laptops.length > 0">
+<div class="col-4">
+
+                <li v-for="laptop in laptops">
+                    <div class="">
+                        <div><br><br>Nume:</div>
+                        <a :href="'details.html?id='+laptop.id">{{ laptop.name }}<br></a>
+                        <div><br><br>Pret:</div>
+                        <span class=""><i>{{ laptop.price }}<br></i></span>
+                        <div><br><br>Procesor:</div>
+                        <span class=""><i>{{ laptop.Procesor}}<br></i></span>
+
+                        <button v-on:click="deleteLaptop(laptop.id)">Delete</button>
+
+                        <br>
+                        <div class="updateContainer">
+                               <a :href="'update.html?id='+laptop.id" target="_self">Update</a>
+
+                        </div>
+
+
+                    </div>
+
+                </li>
+</div>
+
+            </ul>
+
+        </div>
+        <div class="updateContainer">
+        <a :href="'add.html?'" >ADD </a>
+        </div>
+    </div>
 </div>
 <script src="src/app.js"></script>
+
+<!---------- footer ---->
+<div class="footer">
+    <div class="container1">
+        <div class="row1">
+            <div class="footer-col1">
+                <h3> Download Our App</h3>
+                <p>Download App for Android and IOS mobil phone</p>
+                <div class="app1">
+                    <img src="src/poze/magazine.png">
+                </div>
+            </div>
+            <div class="footer-col21">
+                <img src="src/poze/logo.png" width="125px">
+                <p>Our Purpose Is To Sustain Your Other Real Life<br> And Show You The Benefits Of Lots Of Others Lives
+                </p>
+            </div>
+            <div class="footer-col31">
+                <h3> Follow us</h3>
+                <ul1>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul1>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>Copyright 2021 -Gaurean Florina</p>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>

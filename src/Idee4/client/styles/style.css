@@ -3,10 +3,12 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin-top: 100px;
+  max-width:1600px;'
+
 }
 
 #app {
-  width: 25%;
+  max-width:1300px;
   margin: 0 auto 0 auto;
 }
 
@@ -86,6 +88,8 @@ body {
    background-color: #f3f3f3;
    padding: 10px;
    border: 1px solid black;
+     margin-right:45%;
+    margin-left:45%
 
 }
 
@@ -94,8 +98,9 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 2px 0;
-  font-size: 15px;
+  font-size: 12px;
   color: black;
+   margin-top:-5px;
 }
 
 /**************    Header   ***************/
@@ -139,6 +144,7 @@ p1{
     margin:auto;
     padding-left:25px;
     padding-right:25px;
+
 }
 .col21{
     flex-basis: 80%;
@@ -204,4 +210,113 @@ p1{
     padding-right:25px;
 }
 
+.container{
+    max-width:1080px;
+    margin-left:10%;
+    margin-right:10%;
+    padding-left:25px;
+    padding-right:25px;
+    padding-bottom:25px;
+
+        border-radius:2%;
+        border:  5px solid #e00b0b;
+align:center;
+       box-shadow: 6px 1px #080606;
+}
+
+.container .row{
+    display: -webkit-inline-box;
+}
+
+.small-container1 .row1{
+    display: -webkit-inline-box;
+
+}
+
+
+
+.container ul li{
+   padding:20px;
+
+}
+.container col-4{
+   display:inline-flex;
+
+
+
+}
+
+.container ul li{
+   padding:20px;
+   margin:50px;
+        border-radius:5%;
+        border:  5px solid #e00b0b;
+       box-shadow: 6px 1px #080606;
+       text-align:center;
+
+
+}
+
+/*************  FOOTER  **************/
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+
+}
+
+.footer p{
+      color: #8a8a8a;
+ }
+
+ .footer h3{
+      color: #fff;
+      margin-bottom:80px;
+ }
+
+ .footer-col1,.footer-col21,.footer-col31,{
+    min-width: 250px;
+    margin-bottom:20px;
+ }
+
+ .footer-col1{
+ flex-basis:30%;
+}
+
+ .footer-col21{
+ flex:1;
+ text-align:center;
+}
+
+ .footer-col21 img{
+ width:180px;
+ margin-bottom:20px;
+}
+ .footer-col31{
+    flex-basis:12%;
+    text-align:center;
+
+
+ }
+ ul1{
+    list-style-type:none;
+ }
+ .app1{
+    margin-top:20px;
+
+ }
+ .app1 img{
+    width:140px;
+ }
+ .footer hr{
+    border: none;
+    background:#b5b5b5;
+    height:1px;
+    margin:20px 0;
+ }
+
+ .copyright{
+    text-align:center;
+ }
 

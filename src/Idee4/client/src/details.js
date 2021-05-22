@@ -16,7 +16,9 @@ function run() {
                 this.laptop = response.data;
             }
         );
+
       },
+
       methods: {
 
       }

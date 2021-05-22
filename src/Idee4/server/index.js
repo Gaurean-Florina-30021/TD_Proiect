@@ -17,8 +17,8 @@ api.get('/laptops/:id', function (request, response) {
 });
 
 api.put('/laptops', function (request, response) {
-  saveLaptops(request.body);
-  response.json('User was saved succesfully');
+  saveLaptop(request.body);
+  response.json('Laptop was saved succesfully');
 });
 
 api.post('/laptops', function (request, response) {
@@ -46,12 +46,25 @@ api.post('/laptops', function (request, response) {
 });
 
 api.delete('/laptops/:index', function (request, response) {
-  // delete din fisier pe baza unui id
-  // cars.splice(request.params.index, 1);
+    console.log(request.params.index);
+    // cars.splice(request.params.index, 1);
+      let laptops = [];
+        try {
+          laptops = JSON.parse(fs.readFileSync(laptopsFilepath, 'utf8'));
+        } catch (err) {
+          console.error(err);
+          return false;
+        }
 
-  response.json('The laptop with index ' + request.params.index + ' was deleted');
+       laptops.splice(findLaptop(request.params.index),1);
+
+     try {
+        fs.writeFileSync(laptopsFilepath, JSON.stringify(laptops));// salvare json array in fisier
+      } catch (err) {
+        console.error(err)
+      }
+  response.json('Laptop with index ' + request.params.index + ' was deleted');
 });
-
 api.listen(3000, function () {
   console.log('Server running @ localhost:3000');
 });
@@ -97,4 +110,14 @@ function getLaptopById(id){
   }
   return selectedLaptop;
 }
+
+function findLaptop(id){
+    let laptops = getLaptops();
+    for(var i=0; i<laptops.length; i++) {
+        if(id == laptops[i].id)
+            return i;
+      }
+    return -1;
+}
+
 
